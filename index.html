@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="banner">
+      <nav class="navigation">
+        <a href="index.html">
+          <img src="res/images/logo-cafe.png" alt="" id="nav-logo" />
+        </a>
+
+        <ul class="nav-items">
+          <li><a href="#banner" class="nav-link">Home</a></li>
+          <li><a href="pages/products.html" class="nav-link">Menu</a></li>
+          <li><a href="#" class="nav-link">Join Our Team</a></li>
+          <li><a href="#" class="nav-link">About Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="main-text">
+        <h2 class="main-text-sm">Enjoy Your Coffee</h2>
+        <h1 class="main-text-bg">Drink Your Coffee Hot</h1>
+        <a href="pages/products.html" class="nav-link"
+          ><button class="main-btn">Order</button></a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section id="products">
+        <h2 class="section-ttl">Our Highlits</h2>
+        <div class="highlighted-prods">
+          <div class="best-seller-card">
+            <div class="card-image-container">
+              <img class="prod-img" src="res/images/prod1.jpg" alt="Espresso" />
+            </div>
+            <h2 class="card-ttl">Capuccino</h2>
+            <p class="prod-description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+              assumenda delectus totam perspiciatis veritatis iure maxime alias
+              labore voluptate aspernatur
+            </p>
+            <div class="order-container">
+              <button class="card-btn">Order</button>
+              <p class="price-txt">£4.40</p>
+            </div>
+          </div>
+
+          <div class="combo-card">
+            <div class="combo-prods">
+              <div class="prod">
+                <div class="card-image-container">
+                  <img
+                    class="prod-img"
+                    src="res/images/prod2.jpg"
+                    alt="Espresso"
+                  />
+                </div>
+                <h3 class="prod-ttl">Espresso</h3>
+                <div class="price-container">
+                  <p class="original-price">£3.00</p>
+                  <p class="discounted-price">£2.50</p>
+                </div>
+              </div>
+              <div class="prod">
+                <div class="card-image-container">
+                  <img
+                    class="prod-img"
+                    src="res/images/prod3.jpg"
+                    alt="Latte"
+                  />
+                </div>
+                <h3 class="prod-ttl">Latte</h3>
+                <div class="price-container">
+                  <p class="original-price">£3.50</p>
+                  <p class="discounted-price">£3.00</p>
+                </div>
+              </div>
+            </div>
+            <p class="combo-description">
+              Enjoy the perfect pairing of our rich Espresso and creamy Latte at
+              a special price.
+            </p>
+            <div class="order-container">
+              <div class="price-container">
+                <p class="original-price">£6.50</p>
+                <p class="discounted-price">£5.50</p>
+              </div>
+              <button class="card-btn">Order Combo</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/scrollToBestSellers.js"></script>
+  </body>
+</html>
+  

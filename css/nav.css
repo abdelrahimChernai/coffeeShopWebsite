@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000; /* Set background color to black */
+}
+
+#banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../res/images/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+#nav-logo {
+  height: 60px;
+  width: auto;
+  margin-left: 100px;
+}
+
+.nav-items {
+  width: 40%;
+  list-style: none;
+  margin-right: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.main-text {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+}
+
+.main-text-sm {
+  font-size: 2.4em;
+  color: white;
+}
+
+.main-text-bg {
+  font-size: 2.8em;
+  color: white;
+}
+
+.main-btn {
+  color: white;
+  background-color: transparent;
+  border: solid 2px #e4252f;
+  width: 150px;
+  height: 40px;
+  margin: 15px 0;
+}
+
+.card-btn {
+  color: black;
+  background-color: transparent;
+  border: solid 2px #e4252f;
+  width: 150px;
+  height: 40px;
+  margin: 15px 0;
+}
+.order-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10px;
+}
+.price-txt {
+  width: 150px;
+  height: 40px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#products {
+  height: auto; /* Ensure dynamic height to fit all products */
+  padding: 60px 20px; /* Increased padding for better spacing */
+  padding-top: 100px; /* Add space to prevent navbar clipping */
+  padding-bottom: 40px; /* Maintain spacing at the bottom */
+  background-color: #000000; /* Ensure consistent background */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  gap: 50px; /* Add spacing between product sections */
+}
+
+.prod-card,
+.best-seller-card {
+  background-color: #ffffff;
+  width: 400px; /* Smaller than combo card */
+  height: auto;
+  border-radius: 25px;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.prod-card:hover,
+.best-seller-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.prod-card .card-image-container img,
+.best-seller-card .card-image-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.prod-card .card-ttl,
+.best-seller-card .card-ttl {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  color: black; /* Ensure product name is black */
+}
+
+.prod-card .prod-description,
+.best-seller-card .prod-description {
+  font-size: 0.9rem;
+  color: #555;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.prod-card .order-container,
+.best-seller-card .order-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.combo-card {
+  background-color: #ffffff;
+  width: 600px; /* Double the width of a product card */
+  height: auto;
+  border-radius: 25px;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.combo-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.combo-card .combo-prods {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.combo-card .prod {
+  background-color: #f8f8f8;
+  width: 45%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.prod-img {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.prod-ttl {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: black; /* Ensure product title is black */
+}
+
+.combo-description {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.order-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card-btn {
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+  background-color: #e65a50;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.discounted-price {
+  color: #ff6f61;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns in the grid */
+  gap: 50px; /* Ensure good spacing between cards */
+  justify-content: center;
+  padding: 20px; /* Add padding around the grid */
+}
+
+.highlighted-prods {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Match the gap of product sections */
+  padding: 20px;
+}
+
+.section-ttl {
+  text-align: center;
+  font-size: 1.8rem; /* Reduced font size */
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #333333;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+@media (max-width: 1200px) and (min-width: 1000px) {
+  .main-text {
+    top: 25%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 250px);
+  }
+
+  #products {
+    height: 180vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-items {
+    width: 60%;
+  }
+
+  .main-text {
+    top: 25%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Adjust to 2 columns for smaller screens */
+    gap: 40px;
+  }
+
+  #products {
+    height: 250vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+    gap: 30px;
+  }
+}
+
+.best-seller-card,
+.combo-card {
+  margin: 0 auto; /* Center the cards within their section */
+}
